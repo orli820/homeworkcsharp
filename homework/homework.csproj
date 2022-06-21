@@ -46,16 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="01_hello.cs">
+    <Compile Include="Frm01_hello.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="01_hello.Designer.cs">
-      <DependentUpon>01_hello.cs</DependentUpon>
+    <Compile Include="Frm01_hello.Designer.cs">
+      <DependentUpon>Frm01_hello.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm02_loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm02_loan.Designer.cs">
+      <DependentUpon>Frm02_loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm02_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm02_report.Designer.cs">
+      <DependentUpon>Frm02_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="monthlypayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="01_hello.resx">
-      <DependentUpon>01_hello.cs</DependentUpon>
+    <EmbeddedResource Include="Frm01_hello.resx">
+      <DependentUpon>Frm01_hello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm02_loan.resx">
+      <DependentUpon>Frm02_loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm02_report.resx">
+      <DependentUpon>Frm02_report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
