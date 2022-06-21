@@ -70,6 +70,12 @@
     <Compile Include="Frm03_menu.Designer.cs">
       <DependentUpon>Frm03_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm04_scrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm04_scrip.Designer.cs">
+      <DependentUpon>Frm04_scrip.cs</DependentUpon>
+    </Compile>
     <Compile Include="monthlypayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm03_menu.resx">
       <DependentUpon>Frm03_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm04_scrip.resx">
+      <DependentUpon>Frm04_scrip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

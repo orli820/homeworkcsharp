@@ -184,7 +184,7 @@ namespace homework
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 450);
+            this.ClientSize = new System.Drawing.Size(745, 450);
             this.Controls.Add(this.btn_email);
             this.Controls.Add(this.txt_reyear);
             this.Controls.Add(this.txt_rerate);
