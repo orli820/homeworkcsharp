@@ -18,12 +18,12 @@ namespace homework
         }
 
         string result;
-        
+
         internal void button1_Click(object sender, EventArgs e)
         {
             Score sco;
             sco.studentName = txtname.Text;
-            sco.scoreChi = decimal.Parse( txtchi.Text);
+            sco.scoreChi = decimal.Parse(txtchi.Text);
             sco.scoreEng = decimal.Parse(txteng.Text);
             sco.scoreMat = decimal.Parse(txtmat.Text);
             result = $"姓名：{sco.studentName}\r\n國文：{sco.scoreChi}\r\n英文：{sco.scoreEng}\r\n數學：{sco.scoreMat}";
@@ -35,10 +35,38 @@ namespace homework
             txtsco.Text = result;
         }
 
+        string b = "";
+        string c = "";
+
+
         private void button3_Click(object sender, EventArgs e)
         {
-            Score sco;
-            int[] a ={ Convert.ToInt32( txtchi.Text), Convert.ToInt32(txteng.Text), Convert.ToInt32(txtmat.Text) };
             
+            
+
+            int[] a = new int[3] { Convert.ToInt32(txtchi.Text), Convert.ToInt32(txteng.Text), Convert.ToInt32(txtmat.Text) };
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[0] < a[i]) 
+                {
+                    a[0] = a[i];
+                    b = $"最高成績為:{a[0]}\r\n";
+                }
+            }
+
+            int[] x = new int[3] { Convert.ToInt32(txtchi.Text), Convert.ToInt32(txteng.Text), Convert.ToInt32(txtmat.Text) };
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (x[0] > x[i])
+                {
+                    x[0] = x[i];
+                    c = $"最低成績為:{x[0]}";
+                }
+            }
+
+            txthigh.Text = b+c;
+
+
         }
+    }
 }
