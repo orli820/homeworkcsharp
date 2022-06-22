@@ -95,6 +95,12 @@
     <Compile Include="Frm12_paint.Designer.cs">
       <DependentUpon>Frm12_paint.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm14_guess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm14_guess.Designer.cs">
+      <DependentUpon>Frm14_guess.cs</DependentUpon>
+    </Compile>
     <Compile Include="monthlypayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm12_paint.resx">
       <DependentUpon>Frm12_paint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm14_guess.resx">
+      <DependentUpon>Frm14_guess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
