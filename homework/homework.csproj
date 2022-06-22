@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AB.cs" />
+    <Compile Include="Frm00_Con.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm00_Con.Designer.cs">
+      <DependentUpon>Frm00_Con.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm01_hello.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,9 +89,18 @@
     <Compile Include="Frm05_studentlist.Designer.cs">
       <DependentUpon>Frm05_studentlist.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm12_paint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm12_paint.Designer.cs">
+      <DependentUpon>Frm12_paint.cs</DependentUpon>
+    </Compile>
     <Compile Include="monthlypayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm00_Con.resx">
+      <DependentUpon>Frm00_Con.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm01_hello.resx">
       <DependentUpon>Frm01_hello.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm05_studentlist.resx">
       <DependentUpon>Frm05_studentlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm12_paint.resx">
+      <DependentUpon>Frm12_paint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
