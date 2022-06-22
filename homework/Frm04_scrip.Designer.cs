@@ -40,7 +40,7 @@ namespace homework
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txthigh = new System.Windows.Forms.TextBox();
             this.txtsco = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -140,7 +140,7 @@ namespace homework
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txthigh);
             this.groupBox1.Controls.Add(this.txtsco);
             this.groupBox1.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.groupBox1.Location = new System.Drawing.Point(339, 42);
@@ -150,14 +150,14 @@ namespace homework
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "成績";
             // 
-            // textBox6
+            // txthigh
             // 
-            this.textBox6.AcceptsTab = true;
-            this.textBox6.Location = new System.Drawing.Point(13, 178);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(247, 125);
-            this.textBox6.TabIndex = 7;
+            this.txthigh.AcceptsTab = true;
+            this.txthigh.Location = new System.Drawing.Point(13, 192);
+            this.txthigh.Multiline = true;
+            this.txthigh.Name = "txthigh";
+            this.txthigh.Size = new System.Drawing.Size(247, 111);
+            this.txthigh.TabIndex = 7;
             // 
             // txtsco
             // 
@@ -165,7 +165,7 @@ namespace homework
             this.txtsco.Location = new System.Drawing.Point(13, 30);
             this.txtsco.Multiline = true;
             this.txtsco.Name = "txtsco";
-            this.txtsco.Size = new System.Drawing.Size(247, 144);
+            this.txtsco.Size = new System.Drawing.Size(247, 156);
             this.txtsco.TabIndex = 6;
             // 
             // button3
@@ -176,6 +176,7 @@ namespace homework
             this.button3.TabIndex = 12;
             this.button3.Text = "最高分/最低分科目";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Frm04_scrip
             // 
@@ -217,7 +218,7 @@ namespace homework
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txthigh;
         private System.Windows.Forms.TextBox txtsco;
     }
 }

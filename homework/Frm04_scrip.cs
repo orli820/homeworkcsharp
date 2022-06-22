@@ -19,7 +19,7 @@ namespace homework
 
         string result;
         
-        private void button1_Click(object sender, EventArgs e)
+        internal void button1_Click(object sender, EventArgs e)
         {
             Score sco;
             sco.studentName = txtname.Text;
@@ -34,5 +34,11 @@ namespace homework
         {
             txtsco.Text = result;
         }
-    }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Score sco;
+            int[] a ={ Convert.ToInt32( txtchi.Text), Convert.ToInt32(txteng.Text), Convert.ToInt32(txtmat.Text) };
+            
+        }
 }
