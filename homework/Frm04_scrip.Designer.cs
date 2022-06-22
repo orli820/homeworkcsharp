@@ -33,15 +33,15 @@ namespace homework
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.txteng = new System.Windows.Forms.TextBox();
+            this.txtmat = new System.Windows.Forms.TextBox();
+            this.txtchi = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtsco = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -86,37 +86,37 @@ namespace homework
             this.label5.TabIndex = 4;
             this.label5.Text = "國文：";
             // 
-            // textBox1
+            // txtname
             // 
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(111, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(104, 31);
-            this.textBox1.TabIndex = 5;
+            this.txtname.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtname.Location = new System.Drawing.Point(111, 57);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(104, 31);
+            this.txtname.TabIndex = 5;
             // 
-            // textBox2
+            // txteng
             // 
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(111, 167);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(104, 31);
-            this.textBox2.TabIndex = 6;
+            this.txteng.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txteng.Location = new System.Drawing.Point(111, 167);
+            this.txteng.Name = "txteng";
+            this.txteng.Size = new System.Drawing.Size(104, 31);
+            this.txteng.TabIndex = 6;
             // 
-            // textBox3
+            // txtmat
             // 
-            this.textBox3.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox3.Location = new System.Drawing.Point(111, 223);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(104, 31);
-            this.textBox3.TabIndex = 7;
+            this.txtmat.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtmat.Location = new System.Drawing.Point(111, 223);
+            this.txtmat.Name = "txtmat";
+            this.txtmat.Size = new System.Drawing.Size(104, 31);
+            this.txtmat.TabIndex = 7;
             // 
-            // textBox4
+            // txtchi
             // 
-            this.textBox4.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox4.Location = new System.Drawing.Point(111, 112);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(104, 31);
-            this.textBox4.TabIndex = 8;
+            this.txtchi.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtchi.Location = new System.Drawing.Point(111, 112);
+            this.txtchi.Name = "txtchi";
+            this.txtchi.Size = new System.Drawing.Size(104, 31);
+            this.txtchi.TabIndex = 8;
             // 
             // button1
             // 
@@ -126,6 +126,7 @@ namespace homework
             this.button1.TabIndex = 9;
             this.button1.Text = "儲存";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -135,36 +136,37 @@ namespace homework
             this.button2.TabIndex = 10;
             this.button2.Text = "顯示儲存內容";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listBox2);
-            this.groupBox1.Controls.Add(this.listBox1);
+            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtsco);
             this.groupBox1.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.groupBox1.Location = new System.Drawing.Point(339, 42);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(266, 313);
+            this.groupBox1.Size = new System.Drawing.Size(274, 313);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "成績";
             // 
-            // listBox1
+            // textBox6
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(13, 36);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(241, 144);
-            this.listBox1.TabIndex = 0;
+            this.textBox6.AcceptsTab = true;
+            this.textBox6.Location = new System.Drawing.Point(13, 178);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(247, 125);
+            this.textBox6.TabIndex = 7;
             // 
-            // listBox2
+            // txtsco
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 20;
-            this.listBox2.Location = new System.Drawing.Point(13, 186);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(241, 124);
-            this.listBox2.TabIndex = 1;
+            this.txtsco.AcceptsTab = true;
+            this.txtsco.Location = new System.Drawing.Point(13, 30);
+            this.txtsco.Multiline = true;
+            this.txtsco.Name = "txtsco";
+            this.txtsco.Size = new System.Drawing.Size(247, 144);
+            this.txtsco.TabIndex = 6;
             // 
             // button3
             // 
@@ -184,10 +186,10 @@ namespace homework
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtchi);
+            this.Controls.Add(this.txtmat);
+            this.Controls.Add(this.txteng);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -195,6 +197,7 @@ namespace homework
             this.Name = "Frm04_scrip";
             this.Text = "Frm04_scrip";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,15 +209,15 @@ namespace homework
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.TextBox txteng;
+        private System.Windows.Forms.TextBox txtmat;
+        private System.Windows.Forms.TextBox txtchi;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtsco;
     }
 }

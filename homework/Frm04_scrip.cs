@@ -16,5 +16,23 @@ namespace homework
         {
             InitializeComponent();
         }
+
+        string result;
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Score sco;
+            sco.studentName = txtname.Text;
+            sco.scoreChi = decimal.Parse( txtchi.Text);
+            sco.scoreEng = decimal.Parse(txteng.Text);
+            sco.scoreMat = decimal.Parse(txtmat.Text);
+            result = $"姓名：{sco.studentName}\r\n國文：{sco.scoreChi}\r\n英文：{sco.scoreEng}\r\n數學：{sco.scoreMat}";
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtsco.Text = result;
+        }
     }
 }
