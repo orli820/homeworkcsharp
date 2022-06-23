@@ -17,9 +17,9 @@ namespace homework
         {
             InitializeComponent();
         }
+
         
 
-       
         private void button2_Click(object sender, EventArgs e)
         {
             ArrayList sclist = new ArrayList();
@@ -43,7 +43,7 @@ namespace homework
 
             for (int i = 0; i < sclist.Count; i++)
             {
-                labuser.Text += $"{((score)sclist[i]).studentname.PadRight(5)}{((score)sclist[i]).scorechi.ToString().PadLeft(7)}{((score)sclist[i]).scoreeng.ToString().PadLeft(7)}{((score)sclist[i]).scoremat.ToString().PadLeft(7)}{((score)sclist[i]).scoreto.ToString().PadLeft(8)}{((score)sclist[i]).scoreav.ToString().PadLeft(8)}{su[minSc].PadLeft(8)}{sc.Min().ToString()}{su[maxSc].PadLeft(5)}{sc.Max().ToString()}\n";
+                labuser.Text += $"{((score)sclist[i]).studentname.PadRight(5)}{((score)sclist[i]).scorechi.ToString().PadLeft(7)}{((score)sclist[i]).scoreeng.ToString().PadLeft(7)}{((score)sclist[i]).scoremat.ToString().PadLeft(7)}{((score)sclist[i]).scoreto.ToString().PadLeft(8)}{((score)sclist[i]).scoreav.ToString().PadLeft(8)}{su[minSc].PadLeft(8)}{sc.Min().ToString()}{su[maxSc].PadLeft(7)}{sc.Max().ToString()}\n";
 
             }
 
@@ -90,6 +90,12 @@ namespace homework
 
 
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            labuser.Text = "";
+            count = 1;
         }
 
         //int[] SetSc() 

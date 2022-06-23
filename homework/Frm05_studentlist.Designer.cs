@@ -158,17 +158,18 @@ namespace homework
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("標楷體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button4.Location = new System.Drawing.Point(29, 432);
+            this.button4.Location = new System.Drawing.Point(29, 394);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(175, 32);
             this.button4.TabIndex = 18;
-            this.button4.Text = "各科統計";
+            this.button4.Text = "重設所有資料";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("標楷體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button5.Location = new System.Drawing.Point(29, 394);
+            this.button5.Location = new System.Drawing.Point(29, 432);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(175, 32);
             this.button5.TabIndex = 19;
@@ -185,6 +186,8 @@ namespace homework
             // 
             // spgrade.Panel1
             // 
+            this.spgrade.Panel1.AllowDrop = true;
+            this.spgrade.Panel1.AutoScroll = true;
             this.spgrade.Panel1.Controls.Add(this.labuser);
             this.spgrade.Panel1.Controls.Add(this.lablist);
             this.spgrade.Panel1.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -192,12 +195,13 @@ namespace homework
             // spgrade.Panel2
             // 
             this.spgrade.Panel2.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.spgrade.Size = new System.Drawing.Size(554, 419);
+            this.spgrade.Size = new System.Drawing.Size(577, 419);
             this.spgrade.SplitterDistance = 289;
             this.spgrade.TabIndex = 20;
             // 
             // labuser
             // 
+            this.labuser.AllowDrop = true;
             this.labuser.AutoEllipsis = true;
             this.labuser.AutoSize = true;
             this.labuser.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -221,10 +225,10 @@ namespace homework
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 492);
+            this.ClientSize = new System.Drawing.Size(888, 492);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.spgrade);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtN);

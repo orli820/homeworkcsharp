@@ -16,5 +16,26 @@ namespace homework
         {
             InitializeComponent();
         }
+
+        public void button1_Click(object sender, EventArgs e)
+        {
+            Frm14_guess_1 frm141_1 = new Frm14_guess_1();
+            frm141_1.Show();
+        }
+
+        public void button2_Click(object sender, EventArgs e) //todo顯示答案
+        {
+
+        }
+
+        public void lab1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void setlab (string value)
+        {
+            lab1.Text = value;
+        }
     }
 }
