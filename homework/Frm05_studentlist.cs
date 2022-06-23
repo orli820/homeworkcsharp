@@ -24,9 +24,9 @@ namespace homework
         {
             score sco;
             sco.studentname = txtN.Text;
-            sco.scorechi = decimal.Parse(txtC.Text);
-            sco.scoreeng = decimal.Parse(txte.Text);
-            sco.scoremat = decimal.Parse(txtma.Text);
+            sco.scorechi = int.Parse(txtC.Text);
+            sco.scoreeng = int.Parse(txte.Text);
+            sco.scoremat = int.Parse(txtma.Text);
             sco.scoreto = sco.scorechi + sco.scoreeng + sco.scoremat;
             sco.scoreav = Math.Round((sco.scoreto / 3), 2, MidpointRounding.AwayFromZero);
 
@@ -35,7 +35,7 @@ namespace homework
             int maxScoreIndex = sc.ToList().IndexOf(sc.Max());
             int minScoreIndex = sc.ToList().IndexOf(sc.Min());
 
-            result = $"{sco.studentname,-10}"+$"{sco.scorechi,4}"+$"{sco.scoreeng,9}"+$"{sco.scoremat,10}"+ $"{sco.scoreto,11}"+ $"{ sco.scoreav,11}" + $"{ su[minScoreIndex]}{sc.Min()}" + $"{ su[maxScoreIndex]}{sc.Max()}";
+            result = $"{sco.studentname.PadRight(5)}{sco.scorechi.ToString().PadLeft(5)}{sco.scoreeng.ToString().PadLeft(8)}{sco.scoremat.ToString().PadLeft(11)}{sco.scoreto.ToString().PadLeft(14)}{ sco.scoreav.ToString().PadLeft(17)}{su[minScoreIndex]}{sc.Min().ToString().PadLeft(20)}{su[maxScoreIndex]}{sc.Max().ToString().PadLeft(23)}";
 
 
             labuser.Text = result;
