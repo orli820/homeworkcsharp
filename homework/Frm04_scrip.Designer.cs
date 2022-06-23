@@ -153,6 +153,7 @@ namespace homework
             // txthigh
             // 
             this.txthigh.AcceptsTab = true;
+            this.txthigh.BackColor = System.Drawing.SystemColors.Window;
             this.txthigh.Location = new System.Drawing.Point(13, 192);
             this.txthigh.Multiline = true;
             this.txthigh.Name = "txthigh";
@@ -162,6 +163,7 @@ namespace homework
             // txtsco
             // 
             this.txtsco.AcceptsTab = true;
+            this.txtsco.BackColor = System.Drawing.SystemColors.Window;
             this.txtsco.Location = new System.Drawing.Point(13, 30);
             this.txtsco.Multiline = true;
             this.txtsco.Name = "txtsco";
@@ -195,6 +197,7 @@ namespace homework
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.Name = "Frm04_scrip";
             this.Text = "Frm04_scrip";
             this.groupBox1.ResumeLayout(false);

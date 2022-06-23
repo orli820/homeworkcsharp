@@ -22,7 +22,7 @@ namespace homework
     public struct score 
     {
         public string studentname;    //一般欄位
-        public decimal scorechi;
+        public int scorechi;
         public decimal scoreeng;
         public decimal scoremat;
         public decimal scoreto;
