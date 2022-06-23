@@ -46,7 +46,7 @@ namespace homework
             this.label1.Size = new System.Drawing.Size(419, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "Please input number!";
-            
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtgu
             // 
@@ -76,6 +76,7 @@ namespace homework
             this.btnno.TabIndex = 3;
             this.btnno.Text = "cancel";
             this.btnno.UseVisualStyleBackColor = true;
+            this.btnno.Click += new System.EventHandler(this.btnno_Click);
             // 
             // Frm14_guess_1
             // 
@@ -89,7 +90,8 @@ namespace homework
             this.Controls.Add(this.txtgu);
             this.Controls.Add(this.label1);
             this.Name = "Frm14_guess_1";
-            this.Text = "Frm14_guess_1";
+            this.ShowIcon = false;
+            this.Text = "Guess";
             this.Load += new System.EventHandler(this.Frm14_guess_1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

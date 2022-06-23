@@ -30,50 +30,60 @@ namespace homework
         private void InitializeComponent()
         {
             this.lab1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnguess = new System.Windows.Forms.Button();
+            this.btnans = new System.Windows.Forms.Button();
+            this.lab2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lab1
             // 
             this.lab1.AutoSize = true;
             this.lab1.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lab1.Location = new System.Drawing.Point(39, 71);
+            this.lab1.Location = new System.Drawing.Point(30, 67);
             this.lab1.Name = "lab1";
             this.lab1.Size = new System.Drawing.Size(688, 42);
             this.lab1.TabIndex = 0;
             this.lab1.Text = "Pleae Select A Number Between 1 To 100!";
-            this.lab1.Click += new System.EventHandler(this.lab1_Click);
             // 
-            // button1
+            // btnguess
             // 
-            this.button1.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(120, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 84);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Guess";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnguess.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnguess.Location = new System.Drawing.Point(120, 214);
+            this.btnguess.Name = "btnguess";
+            this.btnguess.Size = new System.Drawing.Size(149, 84);
+            this.btnguess.TabIndex = 1;
+            this.btnguess.Text = "Guess";
+            this.btnguess.UseVisualStyleBackColor = true;
+            this.btnguess.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnans
             // 
-            this.button2.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(378, 193);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(241, 87);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Show Answer";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnans.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnans.Location = new System.Drawing.Point(375, 211);
+            this.btnans.Name = "btnans";
+            this.btnans.Size = new System.Drawing.Size(241, 87);
+            this.btnans.TabIndex = 2;
+            this.btnans.Text = "Show Answer";
+            this.btnans.UseVisualStyleBackColor = true;
+            this.btnans.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lab2
+            // 
+            this.lab2.AutoSize = true;
+            this.lab2.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lab2.Location = new System.Drawing.Point(86, 140);
+            this.lab2.Name = "lab2";
+            this.lab2.Size = new System.Drawing.Size(0, 38);
+            this.lab2.TabIndex = 3;
             // 
             // Frm14_guess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 352);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lab2);
+            this.Controls.Add(this.btnans);
+            this.Controls.Add(this.btnguess);
             this.Controls.Add(this.lab1);
             this.Name = "Frm14_guess";
             this.Text = "Frm14_guess";
@@ -85,7 +95,8 @@ namespace homework
         #endregion
 
         private System.Windows.Forms.Label lab1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnguess;
+        private System.Windows.Forms.Button btnans;
+        private System.Windows.Forms.Label lab2;
     }
 }
