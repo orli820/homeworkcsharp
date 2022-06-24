@@ -51,9 +51,8 @@ namespace homework
         }
         int count=1;
 
-        private void button1_Click(object sender, EventArgs e)   //隨機加入資料
+        public void O()
         {
-            
             Random myObject = new Random();
             int ranNum1 = myObject.Next(0, 100);
             int ranNum2 = myObject.Next(0, 100);
@@ -64,13 +63,17 @@ namespace homework
             string[] SUB = { "國文", "英文", "數學" };
             int MAXS = SCO.ToList().IndexOf(SCO.Max());
             int MINS = SCO.ToList().IndexOf(SCO.Min());
-           decimal av = Math.Round(((decimal)(ranNum1+ranNum2+ranNum3) / 3), 2, MidpointRounding.AwayFromZero);
+            decimal av = Math.Round(((decimal)(ranNum1 + ranNum2 + ranNum3) / 3), 2, MidpointRounding.AwayFromZero);
 
 
-            labuser.Text += (count++.ToString().PadRight(5) + ranNum1.ToString().PadLeft(7) + ranNum2.ToString().PadLeft(7) + ranNum3.ToString().PadLeft(7)) + (ranNum1 + ranNum2 + ranNum3).ToString().PadLeft(8) + av.ToString().PadLeft(8) + (SUB[MINS].PadLeft(7))+(SCO.Min().ToString().PadLeft(3)) + (SUB[MAXS].PadLeft(7)) + (SCO.Max().ToString().PadLeft(3)) + "\n";
-
+            labuser.Text += (count++.ToString().PadRight(5) + ranNum1.ToString().PadLeft(7) + ranNum2.ToString().PadLeft(7) + ranNum3.ToString().PadLeft(7)) + (ranNum1 + ranNum2 + ranNum3).ToString().PadLeft(8) + av.ToString().PadLeft(8) + (SUB[MINS].PadLeft(7)) + (SCO.Min().ToString().PadLeft(3)) + (SUB[MAXS].PadLeft(7)) + (SCO.Max().ToString().PadLeft(3)) + "\n";
             //不能在外面count++，若在外面count++,count先+1再算式的+=又再+1一次，count會一直是單數
 
+        }
+
+        public void button1_Click(object sender, EventArgs e)   //隨機加入資料
+        {
+             O();
         }
 
         private void button3_Click(object sender, EventArgs e)   //各科統計
@@ -78,25 +81,28 @@ namespace homework
             
         }
 
-        private void button5_Click(object sender, EventArgs e)  //隨機加入20筆資料
-        {
-            int result = 0;
-            for(int i = 0; i < 21; i++)
-            {
-                result = i ;
-            }
+       
 
-
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)  //重設所有資料
         {
             labuser.Text = "";
             count = 1;
         }
 
-       
+        int result = 0;
+
+        private void button5_Click(object sender, EventArgs e)  //隨機加入20筆資料
+        {
+
+            
+            for (int i = 0; i < 21;i++)
+            {
+                O();
+            }
+
+
+
+        }
     }
 
 
