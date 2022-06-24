@@ -17,51 +17,47 @@ namespace homework
             InitializeComponent();
         }
 
-        public int guess, count, min, max;
+        //public static int guess;
+        //public int count, min, max;
 
 
 
-        Random r = new Random();
+        //Random r = new Random();
 
         private void btnno_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         public void Frm14_guess_1_Load(object sender, EventArgs e)
         {
-           
-            guess = r.Next(1, 100); //隨機數字是guess
-            min = 0;
-            max = 100;
-            btnok.Enabled = true;
+
+           btnok.Enabled = true;
             txtgu.Text = "";
 
         }
 
-        Frm14_guess frm14 = new Frm14_guess();
+        
 
         private void btnok_Click(object sender, EventArgs e)
         {
             int myguess = 0;
+            Frm14_guess form1 = (Frm14_guess)this.Owner;
+
             if (int.TryParse(txtgu.Text,out myguess))
             {
                 if(myguess>=1 && myguess < 100)
                 {
-                    if (myguess == guess)
+                    if (myguess == Frm14_guess.guess)
                     {
-                        MessageBox.Show("Congratulations! You got " + guess);        
+                        MessageBox.Show("Congratulations! You got " + Frm14_guess.guess);        
                         btnok.Enabled = false;
                     }
 
-                    else if(myguess > guess)
+                    else if(myguess > Frm14_guess.guess)
                     {
-                        max = myguess;
+                        Frm14_guess.max = myguess;
                         foreach (Form f in Application.OpenForms)
                         {
 
@@ -73,14 +69,14 @@ namespace homework
                         {
 
                             if (f.GetType() == typeof(Frm14_guess))
-                                (f as Frm14_guess).SetLabelTest($"{min} <  ?  < {max} ");
+                                (f as Frm14_guess).SetLabelTest($"{Frm14_guess.min} <  ?  < {Frm14_guess.max} ");
                         }
                         txtgu.Text = "";
                     }
 
-                    else if (myguess < guess)
+                    else if (myguess < Frm14_guess.guess)
                     {
-                        min = myguess;
+                        Frm14_guess.min = myguess;
                         foreach (Form f in Application.OpenForms)
                         {
 
@@ -91,7 +87,7 @@ namespace homework
                         {
 
                             if (f.GetType() == typeof(Frm14_guess))
-                                (f as Frm14_guess).SetLabelTest($"{min} <  ?  < {max} ");
+                                (f as Frm14_guess).SetLabelTest($"{Frm14_guess.min} <  ?  < {Frm14_guess.max} ");
                         }
                         txtgu.Text = "";
                     }

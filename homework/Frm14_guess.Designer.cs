@@ -65,7 +65,7 @@ namespace homework
             this.btnans.TabIndex = 2;
             this.btnans.Text = "Show Answer";
             this.btnans.UseVisualStyleBackColor = true;
-            this.btnans.Click += new System.EventHandler(this.button2_Click);
+            this.btnans.Click += new System.EventHandler(this.btnans_Click);
             // 
             // lab2
             // 
@@ -87,6 +87,7 @@ namespace homework
             this.Controls.Add(this.lab1);
             this.Name = "Frm14_guess";
             this.Text = "Frm14_guess";
+            this.Load += new System.EventHandler(this.Frm14_guess_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

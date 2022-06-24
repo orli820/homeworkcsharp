@@ -17,24 +17,25 @@ namespace homework
             InitializeComponent();
         }
 
-        public void button1_Click(object sender, EventArgs e)
-        {
-            Frm14_guess_1 frm141_1 = new Frm14_guess_1();
-            frm141_1.Show();
-
-        }
 
         Random r = new Random();
-        public int guess, count, min, max;
+        public static int guess, count, min, max;
 
-
-        public void button2_Click(object sender, EventArgs e) //todo顯示答案
+        public void G()
         {
             guess = r.Next(1, 100); //隨機數字是guess
+        }
+
+        public void Frm14_guess_Load(object sender, EventArgs e)  //打開表單產生隨機數字
+        {
+            G();
             min = 0;
             max = 100;
-            MessageBox.Show("Anser:" + guess);
+            //btnok.Enabled = true;
+            //txtgu.Text = "";
         }
+
+       
 
 
         public void SetLabelTest(string value)  //可以修改標籤
@@ -46,6 +47,22 @@ namespace homework
         {
             lab1.Text = value;
         }
+
+
+        public void button1_Click(object sender, EventArgs e)  //叫出另一個視窗
+        {
+            Frm14_guess_1 frm141_1 = new Frm14_guess_1();
+            frm141_1.Show(this);
+
+        }
+
+
+        public void btnans_Click(object sender, EventArgs e) //答案
+        {
+            MessageBox.Show("Anser:" + guess);
+            G();
+        }
+
 
     }
 }
