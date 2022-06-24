@@ -217,9 +217,9 @@ namespace homework
             this.lablist.Font = new System.Drawing.Font("標楷體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lablist.Location = new System.Drawing.Point(4, 9);
             this.lablist.Name = "lablist";
-            this.lablist.Size = new System.Drawing.Size(503, 17);
+            this.lablist.Size = new System.Drawing.Size(494, 17);
             this.lablist.TabIndex = 0;
-            this.lablist.Text = "姓名   國文  英文  數學   總分   平均    最低      最高";
+            this.lablist.Text = "姓名   國文  英文  數學   總分  平均    最低      最高";
             // 
             // Frm05_studentlist
             // 
