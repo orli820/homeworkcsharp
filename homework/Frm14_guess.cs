@@ -31,8 +31,7 @@ namespace homework
             G();
             min = 0;
             max = 100;
-            //btnok.Enabled = true;
-            //txtgu.Text = "";
+            
         }
 
        
