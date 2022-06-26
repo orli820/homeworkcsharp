@@ -44,11 +44,15 @@ namespace homework
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(29, 22);
+            this.button1.Location = new System.Drawing.Point(80, 33);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(323, 42);
             this.button1.TabIndex = 0;
@@ -57,7 +61,7 @@ namespace homework
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(29, 81);
+            this.button2.Location = new System.Drawing.Point(80, 81);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(323, 42);
             this.button2.TabIndex = 1;
@@ -66,7 +70,7 @@ namespace homework
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(29, 142);
+            this.button3.Location = new System.Drawing.Point(80, 140);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(323, 42);
             this.button3.TabIndex = 2;
@@ -75,7 +79,7 @@ namespace homework
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(29, 201);
+            this.button4.Location = new System.Drawing.Point(80, 201);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(323, 42);
             this.button4.TabIndex = 3;
@@ -84,7 +88,7 @@ namespace homework
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(29, 261);
+            this.button5.Location = new System.Drawing.Point(80, 260);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(323, 42);
             this.button5.TabIndex = 4;
@@ -93,7 +97,7 @@ namespace homework
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(29, 324);
+            this.button6.Location = new System.Drawing.Point(80, 321);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(323, 42);
             this.button6.TabIndex = 5;
@@ -102,7 +106,7 @@ namespace homework
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(29, 387);
+            this.button7.Location = new System.Drawing.Point(80, 391);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(323, 42);
             this.button7.TabIndex = 6;
@@ -111,7 +115,7 @@ namespace homework
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(29, 449);
+            this.button8.Location = new System.Drawing.Point(80, 451);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(323, 42);
             this.button8.TabIndex = 7;
@@ -120,7 +124,7 @@ namespace homework
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(29, 514);
+            this.button9.Location = new System.Drawing.Point(80, 517);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(323, 42);
             this.button9.TabIndex = 8;
@@ -129,7 +133,7 @@ namespace homework
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(29, 583);
+            this.button10.Location = new System.Drawing.Point(80, 583);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(323, 42);
             this.button10.TabIndex = 9;
@@ -138,7 +142,7 @@ namespace homework
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(29, 649);
+            this.button11.Location = new System.Drawing.Point(80, 646);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(323, 42);
             this.button11.TabIndex = 10;
@@ -147,7 +151,7 @@ namespace homework
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(29, 718);
+            this.button12.Location = new System.Drawing.Point(80, 707);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(323, 42);
             this.button12.TabIndex = 11;
@@ -156,7 +160,7 @@ namespace homework
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(29, 785);
+            this.button13.Location = new System.Drawing.Point(80, 773);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(323, 42);
             this.button13.TabIndex = 12;
@@ -165,7 +169,7 @@ namespace homework
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(29, 847);
+            this.button14.Location = new System.Drawing.Point(80, 845);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(323, 42);
             this.button14.TabIndex = 13;
@@ -174,35 +178,50 @@ namespace homework
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(29, 907);
+            this.button15.Location = new System.Drawing.Point(80, 916);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(323, 42);
             this.button15.TabIndex = 14;
             this.button15.Text = "button15";
             this.button15.UseVisualStyleBackColor = true;
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(4, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.button15);
+            this.splitContainer1.Panel1.Controls.Add(this.button11);
+            this.splitContainer1.Panel1.Controls.Add(this.button14);
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.button13);
+            this.splitContainer1.Panel1.Controls.Add(this.button2);
+            this.splitContainer1.Panel1.Controls.Add(this.button12);
+            this.splitContainer1.Panel1.Controls.Add(this.button3);
+            this.splitContainer1.Panel1.Controls.Add(this.button10);
+            this.splitContainer1.Panel1.Controls.Add(this.button4);
+            this.splitContainer1.Panel1.Controls.Add(this.button9);
+            this.splitContainer1.Panel1.Controls.Add(this.button5);
+            this.splitContainer1.Panel1.Controls.Add(this.button8);
+            this.splitContainer1.Panel1.Controls.Add(this.button6);
+            this.splitContainer1.Panel1.Controls.Add(this.button7);
+            this.splitContainer1.Size = new System.Drawing.Size(1830, 1054);
+            this.splitContainer1.SplitterDistance = 525;
+            this.splitContainer1.TabIndex = 15;
+            // 
             // Frm00_Con
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 978);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1846, 1055);
+            this.Controls.Add(this.splitContainer1);
             this.Name = "Frm00_Con";
             this.Text = "Frm00_Con";
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -224,5 +243,6 @@ namespace homework
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.SplitContainer splitContainer1;
     }
 }
