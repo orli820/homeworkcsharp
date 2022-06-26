@@ -15,7 +15,11 @@ namespace homework
         public Frm_Hello()
         {
             InitializeComponent();
+
+          
         }
+
+        
 
         private void btn_Hello_Click(object sender, EventArgs e)
         {
@@ -71,5 +75,7 @@ namespace homework
             MessageBox.Show("Hi,我是" + Name + Environment.NewLine + "生日是" + Birth + Environment.NewLine + "性別是" + result + Environment.NewLine + "星座是" + Star + Environment.NewLine + "很高興認識你!");
 
         }
+
+      
     }
 }

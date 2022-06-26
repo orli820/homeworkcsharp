@@ -15,6 +15,7 @@ namespace homework
         public Frm02_loan()
         {
             InitializeComponent();
+
         }
 
        
