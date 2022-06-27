@@ -29,6 +29,7 @@ namespace homework
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm04_scrip));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,8 +50,9 @@ namespace homework
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(39, 62);
+            this.label1.Location = new System.Drawing.Point(36, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 0;
@@ -59,8 +61,9 @@ namespace homework
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(39, 178);
+            this.label3.Location = new System.Drawing.Point(36, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 20);
             this.label3.TabIndex = 2;
@@ -69,8 +72,9 @@ namespace homework
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.Location = new System.Drawing.Point(39, 234);
+            this.label4.Location = new System.Drawing.Point(36, 241);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 3;
@@ -79,8 +83,9 @@ namespace homework
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label5.Location = new System.Drawing.Point(39, 123);
+            this.label5.Location = new System.Drawing.Point(36, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 4;
@@ -89,7 +94,7 @@ namespace homework
             // txtname
             // 
             this.txtname.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtname.Location = new System.Drawing.Point(111, 57);
+            this.txtname.Location = new System.Drawing.Point(123, 64);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(104, 31);
             this.txtname.TabIndex = 5;
@@ -97,7 +102,7 @@ namespace homework
             // txteng
             // 
             this.txteng.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txteng.Location = new System.Drawing.Point(111, 167);
+            this.txteng.Location = new System.Drawing.Point(123, 174);
             this.txteng.Name = "txteng";
             this.txteng.Size = new System.Drawing.Size(104, 31);
             this.txteng.TabIndex = 6;
@@ -105,7 +110,7 @@ namespace homework
             // txtmat
             // 
             this.txtmat.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtmat.Location = new System.Drawing.Point(111, 223);
+            this.txtmat.Location = new System.Drawing.Point(123, 230);
             this.txtmat.Name = "txtmat";
             this.txtmat.Size = new System.Drawing.Size(104, 31);
             this.txtmat.TabIndex = 7;
@@ -113,16 +118,16 @@ namespace homework
             // txtchi
             // 
             this.txtchi.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtchi.Location = new System.Drawing.Point(111, 112);
+            this.txtchi.Location = new System.Drawing.Point(123, 119);
             this.txtchi.Name = "txtchi";
             this.txtchi.Size = new System.Drawing.Size(104, 31);
             this.txtchi.TabIndex = 8;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(33, 291);
+            this.button1.Location = new System.Drawing.Point(100, 303);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 54);
+            this.button1.Size = new System.Drawing.Size(75, 44);
             this.button1.TabIndex = 9;
             this.button1.Text = "儲存";
             this.button1.UseVisualStyleBackColor = true;
@@ -130,9 +135,9 @@ namespace homework
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(159, 291);
+            this.button2.Location = new System.Drawing.Point(77, 364);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 54);
+            this.button2.Size = new System.Drawing.Size(113, 44);
             this.button2.TabIndex = 10;
             this.button2.Text = "顯示儲存內容";
             this.button2.UseVisualStyleBackColor = true;
@@ -140,10 +145,11 @@ namespace homework
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.txthigh);
             this.groupBox1.Controls.Add(this.txtsco);
             this.groupBox1.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(339, 42);
+            this.groupBox1.Location = new System.Drawing.Point(322, 34);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(274, 313);
             this.groupBox1.TabIndex = 11;
@@ -157,7 +163,7 @@ namespace homework
             this.txthigh.Location = new System.Drawing.Point(13, 192);
             this.txthigh.Multiline = true;
             this.txthigh.Name = "txthigh";
-            this.txthigh.Size = new System.Drawing.Size(247, 111);
+            this.txthigh.Size = new System.Drawing.Size(247, 95);
             this.txthigh.TabIndex = 7;
             // 
             // txtsco
@@ -172,9 +178,9 @@ namespace homework
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(435, 377);
+            this.button3.Location = new System.Drawing.Point(437, 364);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 54);
+            this.button3.Size = new System.Drawing.Size(159, 48);
             this.button3.TabIndex = 12;
             this.button3.Text = "最高分/最低分科目";
             this.button3.UseVisualStyleBackColor = true;
@@ -184,7 +190,9 @@ namespace homework
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 461);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(645, 426);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
