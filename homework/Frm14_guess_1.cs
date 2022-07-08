@@ -17,13 +17,7 @@ namespace homework
             InitializeComponent();
         }
 
-        //public static int guess;
-        //public int count, min, max;
-
-
-
-        //Random r = new Random();
-
+        
         private void btnno_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -38,13 +32,18 @@ namespace homework
 
         }
 
-        
+        public string str;
+           
+        public Frm14_guess_1 (string oo)  //建構函式
+        {
+            InitializeComponent();
+            str = oo;   //here
+        }
 
         private void btnok_Click(object sender, EventArgs e)
         {
             int myguess = 0;
-            Frm14_guess form1 = (Frm14_guess)this.Owner;
-
+            
             if (int.TryParse(txtgu.Text,out myguess))
             {
                 if(myguess>=1 && myguess < 100)
@@ -62,7 +61,7 @@ namespace homework
                         {
 
                             if (f.GetType() == typeof(Frm14_guess))
-                                (f as Frm14_guess).SetLabelTest2($"Too small!");
+                                (f as Frm14_guess).SetLabelTest2($"Too Large!");
                         }
 
                         foreach (Form f in Application.OpenForms)
@@ -81,7 +80,7 @@ namespace homework
                         {
 
                             if (f.GetType() == typeof(Frm14_guess))
-                                (f as Frm14_guess).SetLabelTest2($"Too Large!");
+                                (f as Frm14_guess).SetLabelTest2($"Too small!");
                         }
                         foreach (Form f in Application.OpenForms)
                         {

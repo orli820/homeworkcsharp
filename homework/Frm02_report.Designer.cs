@@ -210,7 +210,7 @@ namespace homework
             this.Controls.Add(this.lab_reloan);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm02_report";
-            this.Text = "Frm02_report";
+            this.Text = "你欠錢齁";
             this.ResumeLayout(false);
             this.PerformLayout();
 

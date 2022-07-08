@@ -18,12 +18,13 @@ namespace homework
             InitializeComponent();
         }
 
-        
+
 
         private void button2_Click(object sender, EventArgs e)
         {
             ArrayList sclist = new ArrayList();
             score sco;
+
 
             sco.studentname = txtN.Text;
             sco.scorechi = int.Parse(txtC.Text);
@@ -49,8 +50,8 @@ namespace homework
 
 
         }
-        int count=1;
-
+        int count = 1;
+    
         public void O()
         {
             Random myObject = new Random();
@@ -73,15 +74,15 @@ namespace homework
 
         public void button1_Click(object sender, EventArgs e)   //隨機加入資料
         {
-             O();
+            O();            
         }
 
         private void button3_Click(object sender, EventArgs e)   //各科統計
         {
-            
+
         }
 
-       
+
 
         private void button4_Click(object sender, EventArgs e)  //重設所有資料
         {
@@ -89,22 +90,22 @@ namespace homework
             count = 1;
         }
 
-        int result = 0;
+        string result;
 
         private void button5_Click(object sender, EventArgs e)  //隨機加入20筆資料
         {
 
-            
-            for (int i = 0; i < 21;i++)
+
+            for (int i = 0; i <= 20; i++)
             {
-                O();
+                //result += O(i);
             }
 
 
 
         }
     }
-
-
 }
+
+
 

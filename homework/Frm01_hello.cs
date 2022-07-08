@@ -17,6 +17,7 @@ namespace homework
             InitializeComponent();
 
           
+           
         }
 
         
@@ -39,7 +40,7 @@ namespace homework
 
             string Star = txt_Star.Text;
 
-            MessageBox.Show("Hello,我是" + Name+Environment.NewLine +"生日是"+ Birth+Environment.NewLine+"性別是"+ result+Environment.NewLine+"星座是" +Star + Environment.NewLine+"很高興認識你!");
+            MessageBox.Show("Hello,我是" + Name+Environment.NewLine +"生日是"+ Birth+Environment.NewLine+"性別是"+ result+Environment.NewLine+"星座是" +Star + Environment.NewLine+ "很高興認識你!");
 
                     }
 
@@ -72,7 +73,7 @@ namespace homework
 
             string Star = txt_Star.Text;
 
-            MessageBox.Show("Hi,我是" + Name + Environment.NewLine + "生日是" + Birth + Environment.NewLine + "性別是" + result + Environment.NewLine + "星座是" + Star + Environment.NewLine + "很高興認識你!");
+            MessageBox.Show("Hi,我是" + Name + Environment.NewLine + "生日是" + Birth + Environment.NewLine + "性別是" + result + Environment.NewLine + "星座是" + Star + Environment.NewLine + "剛剛不是已經打招呼過了嗎?");
 
         }
 

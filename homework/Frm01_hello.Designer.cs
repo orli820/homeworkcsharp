@@ -46,10 +46,10 @@ namespace homework
             // 
             this.txt_Name.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txt_Name.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txt_Name.Location = new System.Drawing.Point(67, 62);
-            this.txt_Name.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_Name.Location = new System.Drawing.Point(89, 78);
+            this.txt_Name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(80, 29);
+            this.txt_Name.Size = new System.Drawing.Size(105, 34);
             this.txt_Name.TabIndex = 3;
             // 
             // lab_name
@@ -59,10 +59,9 @@ namespace homework
             this.lab_name.BackColor = System.Drawing.Color.Transparent;
             this.lab_name.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lab_name.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lab_name.Location = new System.Drawing.Point(11, 63);
-            this.lab_name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lab_name.Location = new System.Drawing.Point(15, 79);
             this.lab_name.Name = "lab_name";
-            this.lab_name.Size = new System.Drawing.Size(52, 24);
+            this.lab_name.Size = new System.Drawing.Size(67, 30);
             this.lab_name.TabIndex = 4;
             this.lab_name.Text = "姓名:";
             // 
@@ -73,10 +72,9 @@ namespace homework
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(11, 105);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(15, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 24);
+            this.label1.Size = new System.Drawing.Size(67, 30);
             this.label1.TabIndex = 5;
             this.label1.Text = "生日:";
             // 
@@ -84,10 +82,10 @@ namespace homework
             // 
             this.txt_Birth.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txt_Birth.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txt_Birth.Location = new System.Drawing.Point(67, 104);
-            this.txt_Birth.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_Birth.Location = new System.Drawing.Point(89, 130);
+            this.txt_Birth.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Birth.Name = "txt_Birth";
-            this.txt_Birth.Size = new System.Drawing.Size(80, 29);
+            this.txt_Birth.Size = new System.Drawing.Size(105, 34);
             this.txt_Birth.TabIndex = 6;
             // 
             // label2
@@ -97,23 +95,23 @@ namespace homework
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(11, 158);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(15, 198);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 24);
+            this.label2.Size = new System.Drawing.Size(67, 30);
             this.label2.TabIndex = 7;
             this.label2.Text = "性別:";
             // 
             // cmb_Sex
             // 
+            this.cmb_Sex.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmb_Sex.FormattingEnabled = true;
             this.cmb_Sex.Items.AddRange(new object[] {
             "male",
             "female"});
-            this.cmb_Sex.Location = new System.Drawing.Point(67, 162);
-            this.cmb_Sex.Margin = new System.Windows.Forms.Padding(2);
+            this.cmb_Sex.Location = new System.Drawing.Point(89, 202);
+            this.cmb_Sex.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Sex.Name = "cmb_Sex";
-            this.cmb_Sex.Size = new System.Drawing.Size(80, 20);
+            this.cmb_Sex.Size = new System.Drawing.Size(105, 33);
             this.cmb_Sex.TabIndex = 8;
             // 
             // label3
@@ -123,10 +121,9 @@ namespace homework
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(11, 211);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(15, 264);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 24);
+            this.label3.Size = new System.Drawing.Size(67, 30);
             this.label3.TabIndex = 9;
             this.label3.Text = "星座:";
             // 
@@ -135,10 +132,10 @@ namespace homework
             this.btn_Hello.BackColor = System.Drawing.SystemColors.Window;
             this.btn_Hello.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.btn_Hello.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn_Hello.Location = new System.Drawing.Point(403, 63);
-            this.btn_Hello.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_Hello.Location = new System.Drawing.Point(537, 79);
+            this.btn_Hello.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Hello.Name = "btn_Hello";
-            this.btn_Hello.Size = new System.Drawing.Size(69, 38);
+            this.btn_Hello.Size = new System.Drawing.Size(92, 48);
             this.btn_Hello.TabIndex = 10;
             this.btn_Hello.Text = "Hello!";
             this.btn_Hello.UseVisualStyleBackColor = false;
@@ -148,10 +145,10 @@ namespace homework
             // 
             this.txt_Star.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txt_Star.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txt_Star.Location = new System.Drawing.Point(67, 210);
-            this.txt_Star.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_Star.Location = new System.Drawing.Point(89, 262);
+            this.txt_Star.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Star.Name = "txt_Star";
-            this.txt_Star.Size = new System.Drawing.Size(80, 29);
+            this.txt_Star.Size = new System.Drawing.Size(105, 34);
             this.txt_Star.TabIndex = 11;
             // 
             // btn_Hi
@@ -159,10 +156,10 @@ namespace homework
             this.btn_Hi.BackColor = System.Drawing.SystemColors.Window;
             this.btn_Hi.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.btn_Hi.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn_Hi.Location = new System.Drawing.Point(403, 175);
-            this.btn_Hi.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_Hi.Location = new System.Drawing.Point(537, 219);
+            this.btn_Hi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Hi.Name = "btn_Hi";
-            this.btn_Hi.Size = new System.Drawing.Size(69, 38);
+            this.btn_Hi.Size = new System.Drawing.Size(92, 48);
             this.btn_Hi.TabIndex = 12;
             this.btn_Hi.Text = "Hi!";
             this.btn_Hi.UseVisualStyleBackColor = false;
@@ -170,11 +167,11 @@ namespace homework
             // 
             // Frm_Hello
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(545, 304);
+            this.ClientSize = new System.Drawing.Size(675, 380);
             this.Controls.Add(this.btn_Hi);
             this.Controls.Add(this.txt_Star);
             this.Controls.Add(this.btn_Hello);
@@ -185,10 +182,10 @@ namespace homework
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lab_name);
             this.Controls.Add(this.txt_Name);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm_Hello";
             this.ShowIcon = false;
-            this.Text = "Frm01_hello";
+            this.Text = "Hello";
             this.ResumeLayout(false);
             this.PerformLayout();
 

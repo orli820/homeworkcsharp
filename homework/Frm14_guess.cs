@@ -50,8 +50,8 @@ namespace homework
 
         public void button1_Click(object sender, EventArgs e)  //叫出另一個視窗
         {
-            Frm14_guess_1 frm141_1 = new Frm14_guess_1();
-            frm141_1.Show(this);
+            Frm14_guess_1 frm141_1 = new Frm14_guess_1("oo");  //here
+            frm141_1.ShowDialog();
 
         }
 

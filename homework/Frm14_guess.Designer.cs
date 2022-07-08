@@ -29,6 +29,7 @@ namespace homework
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm14_guess));
             this.lab1 = new System.Windows.Forms.Label();
             this.btnguess = new System.Windows.Forms.Button();
             this.btnans = new System.Windows.Forms.Button();
@@ -39,7 +40,7 @@ namespace homework
             // 
             this.lab1.AutoSize = true;
             this.lab1.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lab1.Location = new System.Drawing.Point(30, 67);
+            this.lab1.Location = new System.Drawing.Point(25, 98);
             this.lab1.Name = "lab1";
             this.lab1.Size = new System.Drawing.Size(688, 42);
             this.lab1.TabIndex = 0;
@@ -48,9 +49,9 @@ namespace homework
             // btnguess
             // 
             this.btnguess.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnguess.Location = new System.Drawing.Point(120, 214);
+            this.btnguess.Location = new System.Drawing.Point(321, 200);
             this.btnguess.Name = "btnguess";
-            this.btnguess.Size = new System.Drawing.Size(149, 84);
+            this.btnguess.Size = new System.Drawing.Size(162, 99);
             this.btnguess.TabIndex = 1;
             this.btnguess.Text = "Guess";
             this.btnguess.UseVisualStyleBackColor = true;
@@ -59,9 +60,9 @@ namespace homework
             // btnans
             // 
             this.btnans.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnans.Location = new System.Drawing.Point(375, 211);
+            this.btnans.Location = new System.Drawing.Point(426, 363);
             this.btnans.Name = "btnans";
-            this.btnans.Size = new System.Drawing.Size(241, 87);
+            this.btnans.Size = new System.Drawing.Size(264, 97);
             this.btnans.TabIndex = 2;
             this.btnans.Text = "Show Answer";
             this.btnans.UseVisualStyleBackColor = true;
@@ -80,7 +81,9 @@ namespace homework
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 352);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(763, 527);
             this.Controls.Add(this.lab2);
             this.Controls.Add(this.btnans);
             this.Controls.Add(this.btnguess);
